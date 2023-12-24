@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="master.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="search" placeholder="enter your city" id="search" />
+        <img src="./images/search.png" alt="" id="search_icon" />
+      </div>
+      <div class="content_card">
+        <img id="weather_img" src="./images/rain.png" alt="" />
+        <div class="degree">
+          <span id="temprature">7c</span>
+          <h2 class="city">new york</h2>
+          <div class="details">
+            <div class="box">
+              <img src="./images/humidity.png" alt="" />
+              <div>
+                <span id="humidity">48%</span>
+                <h3>humidity</h3>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./images/wind.png" alt="" />
+              <div>
+                <span id="wind">10,29km/h</span>
+                <h3>wind speed</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="error">sorry, cannot read the city</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
